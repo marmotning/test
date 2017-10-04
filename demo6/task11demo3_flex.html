@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>task11demo3_flex</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      height: 50px;
+      background: #ddd;
+      text-align: center; 
+    }
+    .clearfix {
+      display: flex;
+    }
+    menu {
+      width: 300px;
+      height: 500px;
+      background: blue;
+      order: 1;
+    }
+    article {
+      height: 300px;
+      background: yellow;
+      flex-grow: 1;
+      order: 2;
+    }
+    aside {
+      width: 200px;
+      height: 500px;
+      background: red;
+      order: 3;
+    }
+    footer {
+        height: 50px;
+      background: #ddd;
+      text-align: center; 
+    }
+  </style>
+</head>
+<body>
+  <header>这是头部</header>
+  <main class="clearfix">
+    <menu>这是菜单栏</menu>
+    <aside>这是侧边栏</aside>
+    <article>这是内容</article>
+    
+  </main>
+  <footer>这是底部</footer>
+</body>
+</html>
